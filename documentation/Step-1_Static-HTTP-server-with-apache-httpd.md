@@ -10,7 +10,7 @@ All sources of this part of the lab can be found in [docker-images/apache-php-im
 
 Dockerfile: 
 
-```
+```dockerfile
 FROM php:7.2-apache
 
 COPY content/ /var/www/html/
