@@ -20,6 +20,6 @@ To build the web server, we used the `php:7.2-apache` base image to assemble our
 
 ## Usage
 
-First of all, we have to build the docker image by running `docker build -t res/apache_php .`. Then we built a container by running `docker run -d -p 8080:80 res/apache_php`.
+First of all, we have to build the docker image by running `docker build -t res/apache_php .`. Then we run a container with `docker run -d -p 8080:80 res/apache_php`.
 
 Finally we can access our website from a browser at `http://localhost:8080`.
