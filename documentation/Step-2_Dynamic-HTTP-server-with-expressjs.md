@@ -22,7 +22,7 @@ To build the application, we use the `node:10.16` base image to assemble our own
 
 To help us to generate random jokes, we use the `one-liner-joke` package and the `getRandomJoke()` method.
 
-This application will send a random joke to the client who send a `GET` request. This joke will be sent in a `JSON` payload which is splited into two parts : `body` that contains the joke and `tags` that contains an array of tags for this joke.
+This application will send a random joke to the client who sends a `GET` request. This joke will be sent in a `JSON` payload which is splited into two parts : `body` that contains the joke and `tags` that contains an array of tags for this joke.
 
 ## Usage
 
