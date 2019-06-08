@@ -11,4 +11,4 @@ The objectives of the *HTTP Infra lab* are to build a complete web infrasctructu
 All steps of the *HTTP Infra lab* are documented in the **documentation** directory. You have access to the doc files directly from the following links:
 
 * [Step 1 - Static HTTP server with apache httpd](documentation/Step-1_Static-HTTP-server-with-apache-httpd.md)
-* <to complete>
+* [Step 2 - Dynamic HTTP server with express.js](documentation/Step-2_Dynamic-HTTP-server-with-expressjs.md)
