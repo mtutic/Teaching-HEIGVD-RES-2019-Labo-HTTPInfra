@@ -62,7 +62,7 @@ All sites are defined by config files in the sites-available folder. Here we hav
 
  Then we define two reverse proxy rules. The first one is redirecting `/api/joke/` to `http://172.17.0.3:3000/` (corresponds to the dynamic server container that generates a joke). The second one is redirecting `/` to `http://172.17.0.2:80/` (corresponds to the static server container).
 
- :warning: We can see that ip addresses are hard coded. This is not a good thing. It involves that every time we start the container for static and dynamic http server, we have to be sure that `172.17.0.2` is ip address of the **static** web server container and `172.17.0.3` is the ip address of the **dynamic** web server container.
+ :warning: We can see that ip addresses are hard coded. This is not a good thing. It involves that every time we start containers for static and dynamic http server, we have to be sure that `172.17.0.2` is ip address of the **static** web server container and `172.17.0.3` is the ip address of the **dynamic** web server container.
 
  Like we said, the client can access to the server from a browser at `demo.res.ch`. This address is added to `Host` header. So, we have to add `127.0.0.1 demo.res.ch` line in client's `/etc/hosts` file.
 
