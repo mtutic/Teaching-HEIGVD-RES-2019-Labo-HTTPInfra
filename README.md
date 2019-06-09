@@ -13,4 +13,5 @@ All steps of the *HTTP Infra lab* are documented in the **documentation** direct
 * [Step 1 - Static HTTP server with apache httpd](documentation/Step-1_Static-HTTP-server-with-apache-httpd.md)
 * [Step 2 - Dynamic HTTP server with express.js](documentation/Step-2_Dynamic-HTTP-server-with-expressjs.md)
 * [Step 3 - Reverse proxy with apache (static configuration)](documentation/Step-3_Reverse-proxy-with-apache.md)
+* [Step 4 - AJAX requests with JQuery](documentation/Step-4_AJAX-request-with-JQuery.md)
 * [Step 5 - Dynamic reverse proxy configuration](documentation/Step-5_Dynamic-reverse-proxy-configuration.md)
