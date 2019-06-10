@@ -35,7 +35,7 @@ Then you will get on the user interface. You can click on the local endpoint to 
 
 ![local](img/local.png)
 
-Then you will see every containers and images you have. From this you can restart, stop, duplicate, etc. your them.
+Then you will see every containers and images you have. From this you can restart, stop, duplicate, etc. them.
 
 ![container](img/container.png)
 
