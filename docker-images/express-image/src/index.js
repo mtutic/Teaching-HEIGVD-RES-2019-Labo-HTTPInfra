@@ -8,6 +8,7 @@ const oneLinerJoke = require('one-liner-joke');
 
 // Handle get requests by sending jokes in a JSON payload
 app.get('/', (req, res) => {
+  console.log('sending a joke');
   res.send(oneLinerJoke.getRandomJoke());
 });
 
