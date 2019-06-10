@@ -1,4 +1,4 @@
-# Bonus: Management UI
+# Bonus: Load balancing multiple server nodes
 
 ## Description
 
