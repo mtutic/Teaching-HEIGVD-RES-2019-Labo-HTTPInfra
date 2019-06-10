@@ -15,7 +15,7 @@ The sources of this part of the lab is distributed in several folder :
 
 For this step, we just have to modify what we have already done in the previous steps.
 
-Firstly, we add `vim` to our containers to be able to create and edit files inside of them. To do that, we just add to the Dockerfile the following lines :
+Firstly, we add `vim` to our containers to be able to create and edit files inside of them. To do that, we just add following lines to all Dockerfiles:
 
 ```dockerfile
 RUN apt-get update && \
@@ -29,9 +29,9 @@ Now that our containers are ready, we have to indicate to our web page that we a
 <script src="js/joke.js"></script>
 ```
 
-With these lines, we now allow the page to work with our script. It's time to make the script.
+With these lines, we allow the page to work with our script. It's time to make the script.
 
-The script must be an AJAX request and for that we can use the JQuery library. The aim of this script is to call the container at the `/api/joke/` path to get a joke and use them to update a DOM element on the web page. For this, we use the AJAX request with the AJAX variable `$` and the function `getJSON` that can get the JSON send by the joke generator (step 2). After that we update the text on the web page with this line `$('#joke').text(jokeText);`. Finally, we will call this function every six second so we use the `setInterval` function.
+The script must be an AJAX request and for that we can use the JQuery library. The aim of this script is to call the container at the `/api/joke/` path to get a joke and use it to update a DOM element on the web page. For this, we use the AJAX request with the AJAX variable `$` and the function `getJSON` that can get the JSON send by the joke generator (step 2). After that we update the text on the web page with this line `$('#joke').text(jokeText);`. Finally, we will call this function every six second so we use the `setInterval` function.
 
 ```javascript
 // Script used to print joke on the main page of our site
@@ -55,7 +55,7 @@ $(() => {
 });
 ```
 
-For this step, we have to modify the template that we use to make our web page. The template has a title and a subtitle and we won't modify this. So we decide to make a new text element and we add this in the `index.html`. As you can see, the new text element have the ID `joke` and this ID is get by the script to know where to update the text in the page by the label `#joke`.
+For this step, we have to modify the template that we used to make our web page. The template has a title and a subtitle and we won't modify this. So we decided to make a new text element and we add this in the `index.html`. As you can see, the new text element have the ID `joke` and this ID is get by the script to know where to update the text in the page by the label `#joke`.
 
 ```html
 <h3 id="joke" class="text-white-50 mx-auto mt-2 mb-5">JOKE</h3>
@@ -63,6 +63,6 @@ For this step, we have to modify the template that we use to make our web page. 
 
 ## Usage
 
-So if you have follow the step 1 with our documentation, you have to rebuild the static container's image and make a new container.
+If you have follow the step 1 with our documentation, you have to rebuild the static container's image and make a new container.
 
-Than you can go on http://demo.res.ch:8080/ and see that you have a joke on your screen. Furthermore, this joke will change every six seconds.
+Then you can go on http://demo.res.ch:8080/ and see that you have a joke on your screen. Furthermore, this joke will change every six seconds.
