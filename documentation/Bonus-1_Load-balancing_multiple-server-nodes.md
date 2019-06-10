@@ -44,20 +44,20 @@ So, our php script must handle four ip addresses (for the four server nodes). We
 	ServerName demo.res.ch
 
 	<Proxy "balancer://joke">
-		BalancerMember 'http://<?php echo "$dynamic_app_1" ?>/'
-		BalancerMember 'http://<?php echo "$dynamic_app_2" ?>/'
+		BalancerMember 'http://<?php echo "$dynamic_app_1" ?>'
+		BalancerMember 'http://<?php echo "$dynamic_app_2" ?>'
 	</Proxy>
 
 	<Proxy "balancer://static">
-		BalancerMember 'http://<?php echo "$static_app_1" ?>/'
-		BalancerMember 'http://<?php echo "$static_app_2" ?>/'
+		BalancerMember 'http://<?php echo "$static_app_1" ?>'
+		BalancerMember 'http://<?php echo "$static_app_2" ?>'
 	</Proxy>
 
-	ProxyPass '/api/joke/' 'balancer://joke'
-	ProxyPassReverse '/api/joke/' 'balancer://joke'
+	ProxyPass '/api/joke/' 'balancer://joke/'
+	ProxyPassReverse '/api/joke/' 'balancer://joke/'
 	
-	ProxyPass '/' 'balancer://static'
-	ProxyPassReverse '/' 'balancer://static'
+	ProxyPass '/' 'balancer://static/'
+	ProxyPassReverse '/' 'balancer://static/'
 </VirtualHost>
 ```
 
