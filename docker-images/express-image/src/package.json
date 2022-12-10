@@ -14,7 +14,7 @@
     "eslint-plugin-import": "^2.17.3"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "one-liner-joke": "^1.2.0"
   }
 }
